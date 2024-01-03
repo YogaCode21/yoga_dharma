@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function MainAbout() {
   return (
     <>
@@ -6,9 +7,12 @@ export default function MainAbout() {
           Hello 👋,<span className="block"> I&apos;m Yoga Dharma</span>
         </h1>
         <p className="text-lg">A FullStack Web Developer</p>
-        <button className="bg-[#1e1e1e] rounded-full py-3 hover:bg-white hover:text-[#1e1e1e]">
+        <Link
+          href="/contact"
+          className="bg-[#1e1e1e] rounded-full py-3 hover:bg-white hover:text-[#1e1e1e] text-center"
+        >
           Contact Me
-        </button>
+        </Link>
       </div>
     </>
   );

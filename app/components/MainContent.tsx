@@ -24,12 +24,12 @@ export default function MainContent() {
             voluptatibus corporis perferendis dicta consectetur cum id rerum
             temporibus cumque maxime.
           </p>
-          <a
+          <Link
             className="text-[#61DAFB] underline underline-offset-4 hover:text-white "
-            href="#"
+            href="/projects"
           >
             View More
-          </a>
+          </Link>
         </div>
         <div className="bg-[#1e1e1e] rounded p-6 max-w-[500px]">
           <h1 className="text-2xl font-bold ">
