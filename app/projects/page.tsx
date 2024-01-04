@@ -19,9 +19,9 @@ export default function page() {
         </div>
 
         <div className="flex flex-wrap flex-row items-center justify-center gap-5">
-          {ProjectList.map((result) => {
+          {ProjectList.map((result, key) => {
             return (
-              <div className="max-w-80">
+              <div className="max-w-80" key={key}>
                 <Image src={result.image} alt="Project Image" />
                 <h1 className="font-bold text-lg">{result.name}</h1>
                 <p>{result.skills}</p>
