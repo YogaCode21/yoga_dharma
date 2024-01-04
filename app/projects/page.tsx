@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function page() {
   return (
     <>
-      <div className="py-10">
+      <div className="py-10 px-5">
         <div className="flex flex-col items-center justify-center w-full max-w-8xl py-5 gap-5">
           <h1 className="text-5xl font-bold">Personal Projects</h1>
           <label htmlFor="search_project">
@@ -22,7 +22,11 @@ export default function page() {
           {ProjectList.map((result, key) => {
             return (
               <div className="max-w-80" key={key}>
-                <Image src={result.image} alt="Project Image" />
+                <Image
+                  className="w-80 h-52"
+                  src={result.image}
+                  alt="Project Image"
+                />
                 <h1 className="font-bold text-lg">{result.name}</h1>
                 <p>{result.skills}</p>
               </div>
